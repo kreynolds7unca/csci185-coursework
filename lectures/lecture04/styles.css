@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(180, 178, 178);
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.yellow-banner {
+    background-color: rgb(174, 17, 174);
+    padding: 30px; 
+}
+
+section {
+    border: solid 1px black;
+    border-width: thick;
+    display: inline-block;  
+    margin: 20px;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: black;
+   
+}
+
+section {
+    background-color: white;
+    text-align: center;
+}
+/* Your code here */

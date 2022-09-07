@@ -5,17 +5,56 @@
 
 body {
     margin: 0px;
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center; 
+    background-color: rgb(193, 185, 185);
 }
-header, section {
+
+h1 {
     padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
 }
+
+section {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 p, li {
     line-height: 1.5em;
 }
 
 #inspiration {
-    background-color: #F0F0F0;
+    background-color: #B52BFF;
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
+
+header, main, footer {
+    border: solid 2px #5A1680;
+    padding: 10px;
+}
+
+header {
+    height: 20vh;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        background-color: black;
+        color: white;
+    }
+
+    main {
+        background-color: rgb(193, 185, 185);
+        height: 80vh; 
+    }
+
+    footer {
+        background-color: black;
+        color: white; 
+        height: 10vh; 
+    }
+} 

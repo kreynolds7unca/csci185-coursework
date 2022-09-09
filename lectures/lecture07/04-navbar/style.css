@@ -16,10 +16,11 @@ nav {
     display: flex; 
     justify-content: space-between;
     padding-left: 20px;
+    background-color: blueviolet;
 }
 
 ul {
-    border: solid 1px grey; 
+    border: solid 1px rgb(194, 188, 188); 
     display: flex; 
     list-style-type: none;
     width: 300px; 

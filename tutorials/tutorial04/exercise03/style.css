@@ -11,4 +11,18 @@ body {
     margin: 0;
 }
 
+section {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home {
+    background: #afbde9;
+    color: black
+}
+
+
+
 /* create additional rules below:  */

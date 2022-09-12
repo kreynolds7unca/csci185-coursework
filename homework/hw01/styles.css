@@ -1,0 +1,140 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* font-family: Kaushan Script; */
+}
+
+header {
+    background-color: rgb(9, 9, 91);
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+    color: white; 
+    text-align: center;
+    /* font-family:  */
+}
+
+#about {
+    /* font-family: ; */
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+#profile-pic {
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    border-radius: 50%;
+}
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+ul {
+    list-style-type: none;
+    display:flex; 
+}
+
+
+a:link {
+    color:white;
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+  /* visited link */
+a:visited {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+  /* mouse over link */
+ a:hover {
+    color:  white;
+    text-decoration: none;
+    margin: 10px;
+  }
+  
+  /* selected link */
+ a:active {
+    color: white;
+    text-decoration: none;
+    margin: 10px; 
+  }
+
+  footer {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; 
+    padding: 10px; 
+  }
+
+#projects {
+  background-color: grey;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.project-holder {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+.card {
+  margin-left: 20px;
+  display: grid;
+}
+
+.card img {
+  width: 100%; 
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#contact-info .row {
+  display: grid;
+  grid-template-columns: 40px auto;
+  margin-top: 10px;
+}
+
+.row p {
+  margin: 0;
+}
+  
+
+
+/* Your CSS Code Here! */

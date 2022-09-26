@@ -7,13 +7,27 @@ body {
     margin: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center; 
-    background-color: rgb(193, 185, 185);
+    background-color: #e5ecf4;
+}
+
+header {
+    height: 20vh;
+    background-image: url('tutorials/tutorial05/your-task/01-background-images/purplecrescent.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
 }
 
 h1 {
     padding: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
     margin-top: 10px;
+    color: white; 
+}
+
+h2 {
+    color: rgb(74, 25, 148); 
 }
 
 section {
@@ -26,22 +40,43 @@ p, li {
 }
 
 #inspiration {
-    background-color: #B52BFF;
+    background-color: #b793e9;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
+#tutorials a {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(65, 52, 132);
+}
+
+#homework a {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(65, 52, 132);
+}
+
+#inspiration a {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(65, 52, 132);
+}
 
 header, main, footer {
-    border: solid 2px #5A1680;
+    border: solid 2px rgb(74, 25, 148); 
     padding: 10px;
 }
 
-header {
-    height: 20vh;
-}
 
-@media screen and (max-width: 800px) {
+
+/* @media screen and (max-width: 800px) {
     header {
         background-color: black;
         color: white;
@@ -57,4 +92,4 @@ header {
         color: white; 
         height: 10vh; 
     }
-} 
+}  */

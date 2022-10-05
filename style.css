@@ -40,7 +40,7 @@ p, li {
 }
 
 #inspiration {
-    background-color: #b793e9;
+    background-color: #c3bef7;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -74,22 +74,27 @@ header, main, footer {
     padding: 10px;
 }
 
+footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 
-/* @media screen and (max-width: 800px) {
+
+@media screen and (max-width: 800px) {
     header {
-        background-color: black;
+        background-color: rgb(74, 25, 148); 
+        background-image: none;
         color: white;
     }
 
     main {
-        background-color: rgb(193, 185, 185);
-        height: 80vh; 
+        background-color: #e5ecf4;
+        /* height: 80vh;  */
     }
 
     footer {
-        background-color: black;
+        background-color: rgb(74, 25, 148); ;
         color: white; 
         height: 10vh; 
     }
-}  */
+} 

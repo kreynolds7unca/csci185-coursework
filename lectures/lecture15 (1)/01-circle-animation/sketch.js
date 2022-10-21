@@ -42,14 +42,12 @@ function setup() {
 // every time the animation loop invokes the draw() function:
 function draw() {
     clear();
-    let i = 0;
-    while (i < circleData.length) {
+    for (let i = 0; i < circleData.length; i++) {
         const ball = circleData[i];
         fill(ball.color);
         circle(ball.x, ball.y, ball.d); //was circle (x, y, d)
         ball.x += ball.speedX;
         ball.y += ball.speedY;
-        i++;
     }
 
     // fill('grey');

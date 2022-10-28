@@ -1,8 +1,6 @@
 const canvasWidth = window.innerWidth;
 const canvasHeight = window.innerHeight; 
 
-const bubbles = [];
-
 function setup() {
     createCanvas(canvasWidth, canvasHeight);
     circle(data.x, data.y, data.d);
@@ -48,7 +46,6 @@ function draw() {
     let hasIntersected = checkIntersectionTop(data.y-25,70,data.x,10); 
     if (hasIntersected) {
         console.log ('You Win!');
-        Balloons();
     }
     // message
     strokeWeight(0);
@@ -59,16 +56,6 @@ function draw() {
     fill('black');
     textSize(30);
     text("OUT", 760, 85);
-    //bubbles
-    for (const bubble of bubbles) {
-        fill(bubble.color);
-        circle(bubble.x, bubble.y, bubble.d);
-        bubble.y += bubble.speed;
-
-        if (bubble.y < -100) {
-            bubble.y = canvasHeight + 100;
-        }
-    }
 }
 
 
@@ -213,33 +200,4 @@ let xIntersection = (x1<825 && x1> 745);
     } else {
         return false; 
     }
-}
-
-function Balloons() {
-    // 1. When you drag your mouse, create a bubble 
-    //    object and add it to the "bubbles" list.
-    for (let i =0; i<500; i++) {
-    const bubble = {
-        x: Math.random()*canvasWidth,
-        y: Math.random()*canvasHeight,
-        d: Math.random()* 40 + 3,
-        speed: -1 * randDecimal(1, 3) - .5,
-        color: getRandomColor()
-    }
-    bubbles.push(bubble)
-}}
-
-function randInt(min, max) { 
-	// min and max included 
-	return Math.floor(randDecimal(min, max));
-}
-function randDecimal(min, max) { 
-	// min and max included 
-	return Math.random() * (max - min + 1) + min;
-}
-
-function getRandomColor() {
-    const palette = [ '#1b998b', '#ed217c', '#2d3047', '#fffd82', '#ff9b71'];
-    const idx = randInt(0, palette.length - 1);
-    return palette[idx];
 }

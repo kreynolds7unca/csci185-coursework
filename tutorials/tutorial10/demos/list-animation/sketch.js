@@ -23,18 +23,32 @@ function getRandomColor() {
     return palette[idx];
 }
 
-function mouseDragged() {
+// function mouseDragged() {
+//     // 1. When you drag your mouse, create a bubble 
+//     //    object and add it to the "bubbles" list.
+//     const bubble = {
+//         x: mouseX,
+//         y: mouseY,
+//         d: Math.random()* 40 + 3,
+//         speed: -1 * randDecimal(1, 3) - .5,
+//         color: getRandomColor()
+//     }
+//     bubbles.push(bubble)
+// }
+
+function mouseClicked() {
     // 1. When you drag your mouse, create a bubble 
     //    object and add it to the "bubbles" list.
+    for (let i =0; i<500; i++) {
     const bubble = {
-        x: mouseX,
-        y: mouseY,
+        x: Math.random()*canvasWidth,
+        y: Math.random()*canvasHeight,
         d: Math.random()* 40 + 3,
         speed: -1 * randDecimal(1, 3) - .5,
         color: getRandomColor()
     }
     bubbles.push(bubble)
-}
+}}
 
 function draw() {
     clear();

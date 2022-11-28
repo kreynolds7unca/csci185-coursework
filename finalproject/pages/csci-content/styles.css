@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+body {
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center; 
+    background-color: #7c898b;
+}
+
+header {
+    height: 20vh;
+    background-color: #93a3b1;
+}
+
+h1 {
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    margin-top: 10px;
+    color: black; 
+}
+
+h2 {
+    color: black; 
+}
+
+section {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p, li {
+    line-height: 1.5em;
+}
+
+nav {
+    background-color: #636564;
+    text-align: center;
+    padding: 20px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#tutorials a {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    display: grid;
+    grid-column-start: 1;
+}
+
+#homework a {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    display: grid;
+    grid-column-start: 1;
+}
+
+#projects a {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    display: grid;
+    grid-column-start: 1;
+}
+
+header, main, footer {
+    border: solid 3px #636564; 
+    padding: 10px;
+}
+
+a:link {
+    color:white;
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+  /* visited link */
+a:visited {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+  /* mouse over link */
+ a:hover {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+  }
+  
+  /* selected link */
+ a:active {
+    color: white;
+    text-decoration: none;
+    margin: 10px; 
+  }
+
+  footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #636564;
+    color: white;
+    padding: 20px; 
+    text-align: center;
+}

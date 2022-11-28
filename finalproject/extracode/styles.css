@@ -1,7 +1,6 @@
 .grid-container {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .grid-container > div {
@@ -31,120 +30,124 @@ nav {
     font-weight: bold;
 }
 
+
 .item-1 {
-    grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 1;
-    background-color: #7c898b;
+    background-image: url('dm projects/Dean\ Trading\ Card\ Front\ 9-2016.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black; 
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .item-2 {
-    grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 2;
-    background-color: #7c898b;
+    background-image: url('dm projects/Dean\ Trading\ Card\ Back\ 9-2016.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .item-3 {
-    grid-row-start: 3;
     grid-column-start: 1;
     grid-column-end: 1;
-    background-color: #7c898b;
+    background-image: url('dm projects/Painted\ Portraits\ 9-2016.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .item-4 {
-    grid-row-start: 4;
     grid-column-start: 2;
     grid-column-end: 2;
-    background-color: #7c898b;
+    background-image: url('dm projects/Double\ Exposure\ Arctic\ Fox\ &\ Northern\ Lights\ 2-2017.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .item-5 {
-    grid-row-start: 5;
     grid-column-start: 1;
     grid-column-end: 1;
-    background-color: #7c898b;
+    background-image: url('dm projects/SPN\ Poster\ 9-2016.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .item-6 {
-    grid-row-start: 1;
     grid-column-start: 2;
     grid-column-end: 2;
-    background-color: #7c898b;
+    background-image: url('dm projects/SPN\ Con\ Art\ 3-2018.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
 }
 
 .item-7 {
-    grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: 1;
-    background-color: #7c898b;
+    background-image: url('dm projects/Magazine\ Cover\ 3-2018.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
 }
 
 .item-8 {
-    grid-row-start: 3;
     grid-column-start: 2;
     grid-column-end: 2;
-    background-color: #7c898b;
+    background-image: url('dm projects/Double\ Exposure\ Jensen\ Ackles\ &\ Dallas\ 2-2017.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
 }
 
 .item-9 {
-    grid-row-start: 4;
     grid-column-start: 1;
     grid-column-end: 1;
-    background-color: #7c898b;
+    background-image: url('dm projects/Fav\ Books\ 3-2018.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
 }
 
-.item-10 {
-    grid-row-start: 5;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    background-color: #7c898b;
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* .item-1, .item-2, .item-3, .item-4, .item-5, .item-6 > p {
-    font-size: x-large;
-    font-weight: bold;
-} */
 
 a:link {
     color:white;

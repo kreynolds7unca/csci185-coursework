@@ -41,6 +41,8 @@ nav {
     align-items: center;
     color: black; 
     font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 .item-2 {
@@ -53,6 +55,8 @@ nav {
     align-items: center;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 .item-3 {
@@ -65,6 +69,8 @@ nav {
     align-items: center;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 .item-4 {
@@ -77,6 +83,8 @@ nav {
     align-items: center;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 .item-5 {
@@ -89,6 +97,8 @@ nav {
     align-items: center;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 .item-6 {
@@ -140,11 +150,6 @@ nav {
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-/* .item-1, .item-2, .item-3, .item-4, .item-5, .item-6 > p {
-    font-size: x-large;
-    font-weight: bold;
-} */
 
 a:link {
     color:white;

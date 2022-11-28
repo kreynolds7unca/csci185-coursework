@@ -13,33 +13,74 @@ function search (ev) {
 }
 
 async function getTracks (term) {
-    // console.log(`
-    //     get tracks from spotify based on the search term
-    //     "${term}" and load them into the #tracks section 
-    //     of the DOM...`);
     const tracksEndpoint = baseURL + "?q=" + term + "&type=track";
     console.log(tracksEndpoint);
     const data = await fetch(tracksEndpoint).then(response => response.json());
     console.log(data); 
+    console.log(data[0]);
+    console.log(data[0].name);
+    console.log(data[0].artist.name);
+    console.log(data[0].album.image_url);
+    document.querySelector("#tracks").innerHTML = ""; 
+    for(let i = 0; i < 5; i++) {
+        const template = `
+        <section class="track-item preview" onclick="playTrack('${data[i].id}')">
+            <img alt = "this is an album cover for ${data[i].name}" src=${data[i].album.image_url}>
+            <i class="fas fa-play play-track" aria-hidden="true"></i>
+            <div class="label">
+                <h2>${data[i].name}</h2>
+                <p>${data[i].artist.name}</p>
+            </div>
+        </section>
+            `;
+        document.querySelector("#tracks").insertAdjacentHTML('beforeend', template); 
+    }
+}
+
+function playTrack(id) {
+    const template = `
+        <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/${id}?utm_source=generator&theme=0" 
+        width="100%" 
+        height="352" 
+        frameBorder="0" 
+        allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy"></iframe>
+    `;
+    document.querySelector('#artist').innerHTML = template; 
 }
 
 async function getAlbums (term) {
-    // console.log(`
-    //     get albums from spotify based on the search term
-    //     "${term}" and load them into the #albums section 
-    //     of the DOM...`);
     const albumsEndpoint = baseURL + "?q=" + term + "&type=album";
-    console.log(albumsEndpoint);
+    // console.log(albumsEndpoint);
     const data = await fetch(albumsEndpoint).then(response => response.json());
+    console.log(data); 
+    // console.log(data[0]);
+    // console.log(data[0].name);
+    // console.log(data[0].image_url);
+    document.querySelector("#albums").innerHTML = ""; 
+    for(let i = 0; i < 10; i++) {
+    const template = `
+        <section class="album-card" id="${data[i].id}">
+        <div>
+            <img alt = "this is the album ${data[i].name}" src="${data[i].image_url}">
+            <h2>'${data[i].name}'</h2>
+            <div class="footer">
+                <a href="${data[i].spotify_url}" target="_blank">
+                    view on spotify
+                </a>
+            </div>
+        </div>
+    </section>
+    `;
+    document.querySelector("#albums").insertAdjacentHTML('beforeend', template); 
+    }
 }
 
 async function getArtist (term) {
-    // console.log(`
-    //     get artists from spotify based on the search term
-    //     "${term}" and load the first artist into the #artist section 
-    //     of the DOM...`);
     const artistEndpoint = baseURL + "?q=" + term + "&type=artist";
-    console.log(artistEndpoint);
+    // console.log(artistEndpoint);
     const data = await fetch(artistEndpoint).then(response => response.json());
     if (data.length === 0){
         document.querySelector('#artist').innerHTML = "No Results Found"; 
@@ -50,7 +91,7 @@ async function getArtist (term) {
     const template = `
         <section class="artist-card" id="${data[0].id}">
         <div>
-            <img src="${data[0].image_url}">
+            <img alt = "Photo of ${data[0].name}" src="${data[0].image_url}">
             <h2>${data[0].name}</h2>
             <div class="footer">
                 <a href="${data[0].spotify_url}" target="_blank">
@@ -60,18 +101,6 @@ async function getArtist (term) {
     // console.log(template); 
     document.querySelector('#artist').innerHTML = template;
 };
-
-/*
-The PLAN
-1. Create the URL Endpoint based on the term
-2. Go out to Spotify and ask for the artist info matching 
-    the search term. To do this, we need to use the fetch API.
-3. We are going to wait for Spotify to respond to us. 
-4. Once Spotify gives us our data, we're going to 
-    print it to the console. 
-5. Figure how to display our artist info in an creative way. 
-*/ 
-
 
 document.querySelector('#search').onkeyup = function (ev) {
     // Number 13 is the "Enter" key on the keyboard
